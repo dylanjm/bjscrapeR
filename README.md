@@ -1,5 +1,5 @@
-# bjscrapeR
-An API Wrapper for the Bureau of Justice Statistics (BJS)
+bjscrapeR <img src="man/figures/bjscrapeR_hex.png" align="right"/>
+===================================================================
 
 [![Build Status](https://travis-ci.com/dylanjm/bjscrapeR.svg?branch=master)](https://travis-ci.com/dylanjm/bjscrapeR)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
@@ -23,6 +23,7 @@ library(bjscrapeR)
 
 crime_dat <- ncvs_api(year = 2012, dataset = "personal")
 head(crime_dat, 5)
+
 #> # A tibble: 5 x 23
 #>    year weight gender race1R hispanic ethnic1R  ager marital2 hincome popsize region   msa direl notify
 #>   <int>  <dbl>  <int>  <int>    <int>    <int> <int>    <int>   <int>   <int>  <int> <int> <int>  <int>
