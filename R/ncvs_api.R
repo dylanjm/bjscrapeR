@@ -5,7 +5,7 @@
 #' @param population A boolean value specifying whether to return personal victimization population of incidents reported to the NCVS by year.
 #' @param ... Any additional parameters
 #' @return A tibble containing information downloaded from API.
-#' @importFrom readr read_csv
+#' @importFrom readr read_csv cols
 #' @keywords bjs crime victimization law policy
 #' @export ncvs_api
 #' @seealso \url{https://www.bjs.gov/developer/ncvs/developers.cfm#/bjs/ncvs/v2/personal/population/{year}}
@@ -36,7 +36,7 @@ ncvs_api <- function(year = 2016, dataset = "personal", population = FALSE, ...)
   }
 
   message("Trying BJS Servers...")
-  ncvs_dat <- read_csv(ncvs_url, col_types = cols())
+  ncvs_dat <- readr::read_csv(ncvs_url, col_types = readr::cols())
   message("Payload Successful")
 
   return(ncvs_dat)
