@@ -1,0 +1,15 @@
+Package: bjscrapeR
+Title: An API Wrapper for the Bureau of Justice Statistics (BJS)
+Version: 0.0.0.9000
+Authors@R: person("Dylan", "McDowell", email = "dylan.mcdowell226@gmail.com", role = c("aut", "cre"))
+Description: What the package does (one paragraph).
+Depends: R (>= 3.5.0)
+Imports:
+  readr,
+  dplyr,
+  glue,
+  rlang
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
