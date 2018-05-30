@@ -7,8 +7,7 @@ Depends: R (>= 3.5.0)
 Imports:
   readr,
   dplyr,
-  glue,
-  rlang
+  glue
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
