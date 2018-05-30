@@ -3,7 +3,7 @@ Title: An API Wrapper for the Bureau of Justice Statistics (BJS)
 Version: 0.0.0.9000
 Authors@R: person("Dylan", "McDowell", email = "dylan.mcdowell226@gmail.com", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
-Depends: R (>= 3.5.0)
+Depends: R (>= 3.4.0)
 Imports:
   readr,
   dplyr,
