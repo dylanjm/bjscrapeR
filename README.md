@@ -1,4 +1,4 @@
-bjscrapeR <img src="man/figures/bjscrapeR_hex.png" align="right" height=3, width=2/>
+bjscrapeR <img src="man/figures/bjscrapeR_hex.png" align="right" height="275" width="150"/>
 ===================================================================
 
 [![Build Status](https://travis-ci.com/dylanjm/bjscrapeR.svg?branch=master)](https://travis-ci.com/dylanjm/bjscrapeR)
