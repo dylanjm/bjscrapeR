@@ -7,7 +7,7 @@
 ncvs_api(year = 2016, dataset = "personal", population = FALSE, ...)
 }
 \arguments{
-\item{year}{These data archives span all the way back from 1993 to 2016. The default is 2016}
+\item{year}{These data-archives span all the way back from 1993 to 2016. Currently there is no way to query multiple years at a time. The default year is 2016.}
 
 \item{dataset}{The API provides two different datasets, the personal victimization, and household victimization for all years.}
 
@@ -21,18 +21,23 @@ A tibble containing information downloaded from API.
 \description{
 Returns data from NCVS API
 }
+\note{
+\strong{Please be aware of the Decennial Sample Redesign:} "In 2006 and 2016, the NCVS sample was redesigned to reflect changes in the population based on the most recent Decennial Census. The redesign impacted the comparability of 2006 and 2016 estimates to prior years of data. Use caution when comparing 2006 and 2016 estimates to other years. See Criminal Victimization, 2006 Technical Notes \emph{(BJS Web, NCJ 219413, December 2007)}, Criminal Victimization, 2007 \emph{(BJS Web, NCJ 224390, December 2008)} and Criminal Victimization, 2016 \emph{(BJS Web, NCJ 250652, November 2017)} for more information."
+}
 \examples{
 
 # A request for personal victimization survey for the year 2012
 dat <- ncvs_api(year = 2012, dataset = "personal", population = FALSE)
 
-# A requestion for household victimization survey for the year 1994
+# A request for household victimization survey for the year 1994
 dat <- ncvs_api(year = 1994, dataset = "household", population = FALSE)
 
+# Use purrr::map() to query multiple years and combine into one dataframe
+map(2012:2016, ~ncvs_api(.x)) \%>\% map_df(bind_rows)
 
 }
 \seealso{
-\url{https://www.bjs.gov/developer/ncvs/developers.cfm#/bjs/ncvs/v2/personal/population/{year}}
+\url{https://www.bjs.gov/developer/ncvs/methodology.cfm}
 }
 \keyword{bjs}
 \keyword{crime}
