@@ -5,12 +5,6 @@ warnings_are_errors: true
 sudo: required
 cache: packages
 
-matrix:
-    include:
-        - os: osx
-          r: release
-
 notifications:
   email:
-    on_success: change
     on_failure: change
