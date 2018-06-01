@@ -8,7 +8,8 @@ Depends: R (>= 3.4.0)
 Imports:
   readr,
   dplyr,
-  glue
+  glue,
+  tibble
 License: MIT + file LICENSE
 URL: https://github.com/dylanjm/bjscrapeR
 BugReports: https://github.com/dylanjm/bjscrapeR/issues
