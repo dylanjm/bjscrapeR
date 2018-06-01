@@ -1,0 +1,17 @@
+#' National Crime Victimization Survey - Household Codebook
+#'
+#' A tidy dataset describing the variables found in the household ncvs dataset.
+#' Each row represents a value associated with a specific variable.
+#'
+#' @format A \link[tibble]{tibble} with 58 rows and 5 variables:
+#' \describe{
+#' \item{ncvs_h_id}{ Variable Id}
+#' \item{ncvs_h_name}{ Human Readable Variable Name}
+#' \item{ncvs_h_desc}{ Short description of Variable}
+#' \item{ncvs_h_values}{ Human Readable Values}
+#' \item{ncvs_h_factor_values}{ Factor Values Assigned to Values}
+#' }
+#'
+#' @source Methodology - \url{https://www.bjs.gov/developer/ncvs/methodology.cfm}
+#' @source XML File - \url{https://api.bjs.ojp.gov/bjs/ncvs/v2/household/fields}
+"ncvs_household_codebook"
