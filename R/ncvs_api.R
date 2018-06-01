@@ -8,6 +8,7 @@
 #' @importFrom readr read_csv cols
 #' @importFrom glue glue
 #' @importFrom dplyr %>%
+#' @importFrom tibble is.tibble
 #' @keywords bjs crime victimization law policy
 #' @note \strong{Please be aware of the Decennial Sample Redesign:} "In 2006 and 2016, the NCVS sample was redesigned to reflect changes in the population based on the most recent Decennial Census. The redesign impacted the comparability of 2006 and 2016 estimates to prior years of data. Use caution when comparing 2006 and 2016 estimates to other years. See Criminal Victimization, 2006 Technical Notes \emph{(BJS Web, NCJ 219413, December 2007)}, Criminal Victimization, 2007 \emph{(BJS Web, NCJ 224390, December 2008)} and Criminal Victimization, 2016 \emph{(BJS Web, NCJ 250652, November 2017)} for more information."
 #' @export ncvs_api
