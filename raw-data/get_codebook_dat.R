@@ -32,9 +32,9 @@ var_p_table <- tibble(ncvs_p_id, ncvs_p_name, ncvs_p_desc)
 values_p_table <- tibble(ncvs_p_values, ncvs_p_factor_values)
 
 nested_p_vals <- values_p_table %>%
-  group_by(group = cumsum(c(FALSE, diff(as.numeric(ncvs_p_factor_values)) < 0))) %>%
+  group_by(group = cumsum(c(FALSE, diff(as.numeric(ncvs_p_factor_values)) <= 0))) %>%
   ungroup() %>%
-  mutate(group = replace(group, group %in% NA, c(20,21,22))) %>%
+  mutate(group = replace(group, group %in% NA, c(21,21,22))) %>%
   group_by(group) %>%
   nest(ncvs_p_values:ncvs_p_factor_values)
 
@@ -73,9 +73,10 @@ var_h_table <- tibble(ncvs_h_id, ncvs_h_name, ncvs_h_desc)
 values_h_table <- tibble(ncvs_h_values, ncvs_h_factor_values)
 
 nested_h_vals <- values_h_table %>%
-  group_by(group = cumsum(c(FALSE, diff(as.numeric(ncvs_h_factor_values)) < 0))) %>%
+  group_by(group = cumsum(c(FALSE, diff(as.numeric(ncvs_h_factor_values)) < 0 ))) %>%
   ungroup() %>%
-  mutate(group = replace(group, group %in% NA, c(14,15,16))) %>%
+  mutate(group = replace(group, group %in% 12:13, c(12,12,13,13,13,14,14)),
+         group = replace(group, group %in% NA, c(15,15,16))) %>%
   group_by(group) %>%
   nest(ncvs_h_values:ncvs_h_factor_values)
 

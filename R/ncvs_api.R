@@ -21,9 +21,6 @@
 #' # A request for household victimization survey for the year 1994
 #' dat <- ncvs_api(year = 1994, dataset = "household", population = FALSE)
 #'
-#' # Use purrr::map() to query multiple years and combine into one dataframe
-#' map(2012:2016, ~ncvs_api(.x)) %>% map_df(bind_rows)
-#'
 ncvs_api <- function(year = 2016, dataset = "personal", population = FALSE, ...){
 
   dataset_options <- c("personal", "household")
