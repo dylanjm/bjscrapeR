@@ -27,10 +27,10 @@ Returns data from NCVS API
 \examples{
 
 # A request for personal victimization survey for the year 2012
-dat <- ncvs_api(year = 2012, dataset = "personal", population = FALSE)
+\donttest{dat <- ncvs_api(year = 2012, dataset = "personal", population = FALSE)}
 
 # A request for household victimization survey for the year 1994
-dat <- ncvs_api(year = 1994, dataset = "household", population = FALSE)
+\donttest{dat <- ncvs_api(year = 1994, dataset = "household", population = FALSE)}
 
 }
 \seealso{
