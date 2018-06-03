@@ -3,7 +3,7 @@ Type: Package
 Title: An API Wrapper for the Bureau of Justice Statistics (BJS)
 Version: 0.1.0
 Authors@R: person("Dylan", "McDowell", email = "dylan.mcdowell226@gmail.com", role = c("aut", "cre"))
-Description: Drawing heavy influence from library(blscrapeR), this library is meant to be a tidy wrapper around the Bureau of Justice Statistics (BJS) API. The idea is to utilize the 'tidyverse' methodology to create an efficient work flow when dealing with crime statistics.
+Description: Drawing heavy influence from library(blscrapeR), this library scrapes data from <https://www.bjs.gov/>. The idea is to utilize the 'tidyverse' methodology to create an efficient work flow when dealing with crime statistics.
 Depends: R (>= 3.4.0)
 Imports:
   readr,
