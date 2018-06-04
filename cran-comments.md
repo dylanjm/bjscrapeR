@@ -6,6 +6,8 @@
 
 * Added \donttest{} to examples on `ncvs_api()`
 
+* Edits to DESCRIPTION file. Added more details and changed some technical verbage
+
 # Test Environments
 
 local macOS 10.13.5, R 3.5.0
