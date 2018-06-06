@@ -5,6 +5,7 @@
 
 [![Build
 Status](https://travis-ci.com/dylanjm/bjscrapeR.svg?branch=master)](https://travis-ci.com/dylanjm/bjscrapeR)
+![Current CRAN Version](https://www.r-pkg.org/badges/version/bjscrapeR)
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
@@ -41,11 +42,11 @@ head(crime_dat, 5)
 #> # A tibble: 5 x 23
 #>    year weight gender race1R hispanic ethnic1R  ager marital2 hincome
 #>   <int>  <dbl>  <int>  <int>    <int>    <int> <int>    <int>   <int>
-#> 1  2012  2739.      1      1        2        1     6        3      88
-#> 2  2012  2739.      1      1        2        1     6        3      88
-#> 3  2012  2232.      2      2        2        2     5        1       2
-#> 4  2012  1570.      2      2        2        2     6        1       2
-#> 5  2012  3097.      1      1        2        1     7        2      88
+#> 1  2012  1535.      2      2        2        2     6        4       1
+#> 2  2012  2780.      1      2        2        2     5        1       5
+#> 3  2012  3294.      2      1        2        1     4        1       2
+#> 4  2012  3774.      1      1        1        4     2        1       5
+#> 5  2012  3580.      1      1        2        1     7        1       2
 #> # ... with 14 more variables: popsize <int>, region <int>, msa <int>,
 #> #   direl <int>, notify <int>, weapon <int>, weapcat <int>,
 #> #   newcrime <int>, newoff <int>, seriousviolent <int>, injury <int>,
